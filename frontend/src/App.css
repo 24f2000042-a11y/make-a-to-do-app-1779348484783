@@ -1,0 +1,92 @@
+/* Modern Blue Theme */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #0d6efd;
+  margin-bottom: 1.5rem;
+}
+
+.add-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.add-form input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.add-form button {
+  padding: 0.5rem 1rem;
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-form button:hover {
+  background: #0b5ed7;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-bottom: 1px solid #e9ecef;
+  cursor: pointer;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.todo-list li span {
+  flex: 1;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #dc3545;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #c82333;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
